@@ -3,3 +3,23 @@
     margin: 0;
     padding: 0;
 }
+
+.c1 {
+    text-align: start;
+    font-size: 30px;
+    color: #29b1dd;
+}
+
+.c2 {
+    background-color: #29b1dd;
+    color: white;
+    text-align: center;
+    padding: 1rem
+}
+
+.Cont_2 {
+    background-color: lightgrey;
+    height: 800px;
+    max-width: 99%;
+    margin-left: 0;
+}

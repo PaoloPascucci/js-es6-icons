@@ -97,3 +97,15 @@ const icons = [
     }
 ];
 
+icons.forEach(icon => {
+    document.querySelector('.Cont_2').innerHTML += GenIcon(icon)
+});
+
+function GenIcon(icon) {
+    return `
+        <div class="card">
+            <i class="${icon.family} ${icon.prefix}${icon.name} ${icon.type} ${icon.prefix}3x"></i>
+            <p><strong>${icon.name}</strong></p>
+        </div>
+`
+}

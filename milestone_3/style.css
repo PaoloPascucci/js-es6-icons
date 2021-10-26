@@ -55,3 +55,7 @@ p {
 .animal {
     color: #0000ff;
 }
+
+select {
+    text-align: center;
+}

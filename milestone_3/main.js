@@ -97,9 +97,26 @@ const icons = [
     }
 ];
 
-icons.forEach(icon => {
-    document.querySelector('.Cont_2').innerHTML += GenIcon(icon)
-});
+const select = document.getElementById('Icons');
+const row = document.querySelector('.Cont_2')
+select.addEventListener('change', Icongen)
+
+
+function Icongen() {
+
+    row.innerHTML = "";
+
+    icons.forEach(icon => {
+
+
+        if (select.value == icon.type || select.value == "all") {
+            row.innerHTML += GenIcon(icon)
+        }
+
+    })
+}
+
+Icongen()
 
 function GenIcon(icon) {
     return `
@@ -109,3 +126,7 @@ function GenIcon(icon) {
         </div>
 `
 }
+
+
+
+
